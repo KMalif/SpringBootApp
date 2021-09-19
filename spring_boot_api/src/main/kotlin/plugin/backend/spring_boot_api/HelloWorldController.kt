@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 class HelloWorldController {
 
     @GetMapping
-    fun sayHello(): String = """
-        hi KMalif,
-         this is your first Spring Boot App
-         Keep it up, lets go
-    """
+    fun sayHello(): String {
+        return "Keep it up "
+    }
 }
